@@ -1,0 +1,40 @@
+.pictures {
+    &__image {
+        max-width: 540px;
+        max-height: 621px;
+        width: 100%;
+        height: auto;
+    }
+    &__card {
+        // padding-top: 145px;
+        width: 540px;
+        height: 331px;
+        max-width: 100%;
+    }
+
+    &__title {
+        color: #2C2D35;
+        font-size: 60px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__title--green {
+        color: #598D66;
+    }
+
+    &__describe {
+        color: #86928B;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        color: #598D66;
+        font-size: 20px;
+        font-weight: 500;
+        border: 1px solid #598D66;
+        padding: 18.5px 51.5px;
+    }
+}
