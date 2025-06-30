@@ -1,0 +1,81 @@
+.catalog {
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+        color: #2C2D35;
+    }
+
+    &__tab-item {
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
+    &__tab-link {
+        font-size: 20px;
+        font-weight: 500;
+        color: #2C2D35;
+        border: 1px solid #D4E8D9;
+        border-radius: 16px;
+        padding: 10px 20px;
+        background-color: #D4E8D9;
+        &:hover {
+            color:#F4F6F5;
+            background-color:#376B44;
+            // outline: none;
+        }
+    }
+
+    &__cart {
+        max-width: 350px;
+        // max-height: 730px;
+        width: 100%;
+        height: auto;
+        background-color: #E1EDE6;
+        padding: 20px 20px 30px 20px;
+        margin-top: 30px;
+    }
+
+    &__cart-art {
+        // padding-bottom: 20px;
+    }
+
+    &__art-author {
+        color: #86928B;
+        padding-bottom: 10px;
+    }    
+
+    &__art-name {
+        padding-bottom: 8px;
+        color: #2C2D35;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__art-description {
+        color: #2C2D35;
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+
+    &__art-price {
+        font-size: 24px;
+        font-weight: 500;
+        color: #598D66;
+        padding-bottom: 20px;
+    }
+
+    &__button {
+        color: #598D66;
+        font-size: 20px;
+        font-weight: 500;
+        max-width: 310px;
+        // max-height: 65px;
+        width: 100%;
+        height: auto;
+        padding: 21px 0 21px 0;
+        background-color: #E1EDE6;
+        border: 1px solid #598D66;
+    }
+}
