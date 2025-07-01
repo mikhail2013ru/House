@@ -1,0 +1,60 @@
+.promo {
+    color: #F4F6F5;
+    min-height: 574px; // Фиксированная высота как в оригинале
+    overflow: hidden; // Важно для корректного отображения фона
+    // background-image: url('../images/Rectangle.png');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // position: relative;
+    // z-index: 0;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/Rectangle.png');
+        background-size: cover; // или 1440px 574px если нужно точное соответствие
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); // Затемнение 30%
+            mix-blend-mode: multiply; // Или soft-light для другого эффекта
+        }
+    }
+    &__wrapper {
+        padding: 70px 0 70px 165px;
+        position: relative;
+        // z-index: 5;
+    }
+
+    &__description {
+        // position: relative;
+        // width: 540px;
+        // width: 100%;
+    }
+
+    &__block-wrap {
+        // max-width: 540px;
+    }
+
+    &__title-wrap {
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        color: #2C2D35;
+        max-width: 257px;
+        width: 100%;
+        background-color: #EEDB6D;
+        padding: 21px 60px;
+    }
+}
