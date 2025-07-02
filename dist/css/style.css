@@ -12297,7 +12297,7 @@ header {
   }
 }
 .about {
-  padding: 70px 0 70px 165px;
+  padding: 70px 0 70px;
   color: #2C2D35;
 }
 .about__block {
@@ -12320,6 +12320,40 @@ header {
   gap: 30px;
 }
 
+.footer {
+  background-color: #E1EDE6;
+  width: 100%;
+}
+.footer__phone-link {
+  color: #2C2D35;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.footer__art-workshop {
+  color: #86928B;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer__information-list:not(:last-child) {
+  margin-right: 60px;
+}
+.footer__list-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+.footer__link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #86928B;
+}
+.footer__list-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2C2D35;
+}
+.footer__icons-link:not(:last-child) {
+  margin-right: 30px;
+}
 .fixed-height {
   height: 100px;
   min-height: 100px; /* На случай переполнения контента */
