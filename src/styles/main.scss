@@ -1,18 +1,20 @@
 @use './base/mixins' as *;
 @use './base/variables' as *;  // Добавлена точка и слеш перед именем файла
+@use "bootstrap" with (
+  $container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1440px
+  )
+);
 
-// Переопределяем переменные Bootstrap
-// $container-max-widths: (
-//   xxl: 1440px
-// );
-@use '~bootstrap/scss/bootstrap' as bs;
-@use 'sass:meta';
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-@import './components/header.scss';
-@import './components/pictures.scss';
-@import './components/catalog.scss';
-@import './components/promo.scss';
+@use './components/header.scss';
+@use './components/pictures.scss';
+@use './components/catalog.scss';
+@use './components/promo';
+@use './components/about.scss';
 
 // Кастомные стили
 .fixed-height {

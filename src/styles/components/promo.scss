@@ -1,14 +1,9 @@
 .promo {
     color: #F4F6F5;
     min-height: 574px; // Фиксированная высота как в оригинале
-    overflow: hidden; // Важно для корректного отображения фона
-    // background-image: url('../images/Rectangle.png');
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // position: relative;
-    // z-index: 0;
+    overflow: hidden; // Важно для корректного отображения фона    
     &__bg {
+        // min-width: 1440px;
         position: absolute;
         top: 0;
         left: 0;
@@ -33,17 +28,21 @@
     &__wrapper {
         padding: 70px 0 70px 165px;
         position: relative;
-        // z-index: 5;
     }
 
-    &__description {
-        // position: relative;
-        // width: 540px;
-        // width: 100%;
+    &__content-wrap {
+        max-width: 540px;
+        width: 100%;
     }
 
-    &__block-wrap {
+    &__title-image {
+        padding-right: 20px;
+    }
+
+    &__description-wrap {
+        margin-bottom: 60px;
         // max-width: 540px;
+        // width: 100%;
     }
 
     &__title-wrap {
@@ -56,5 +55,11 @@
         width: 100%;
         background-color: #EEDB6D;
         padding: 21px 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .promo {
+      min-width: 1440px;
     }
 }

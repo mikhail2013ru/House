@@ -1,0 +1,26 @@
+.about {
+    padding: 70px 0 70px 165px;
+    color: #2C2D35;
+    &__block {
+        max-width: 635px;
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 60px;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__team {
+        gap: 30px;
+    }
+}
