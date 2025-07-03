@@ -12321,8 +12321,12 @@ header {
 }
 
 .footer {
+  padding: 23px 0 23px 0;
   background-color: #E1EDE6;
   width: 100%;
+}
+.footer__contacts {
+  margin-top: 35px;
 }
 .footer__phone-link {
   color: #2C2D35;
@@ -12354,6 +12358,13 @@ header {
 .footer__icons-link:not(:last-child) {
   margin-right: 30px;
 }
+.footer__copyrights-text {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #86928B;
+}
+
 .fixed-height {
   height: 100px;
   min-height: 100px; /* На случай переполнения контента */

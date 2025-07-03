@@ -11,7 +11,7 @@ self["webpackHotUpdatedelivery_food"]("main",{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("64c76f6a83e2ab53d11e")
+/******/ 	__webpack_require__.h = () => ("2bd1677584080ca46787")
 /******/ })();
 /******/ 
 /******/ }
