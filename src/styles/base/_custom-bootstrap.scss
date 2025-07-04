@@ -1,0 +1,50 @@
+// Кастомные breakpoints (точные значения)
+$custom-breakpoints: (
+  mobile: 0,
+  mobile-lg: 480px,
+  tablet: 768px,
+  tablet-lg: 1024px,
+  desktop: 1280px,
+  desktop-lg: 1440px,
+  hd: 1920px,
+  4k: 2560px
+);
+
+// Переопределяем стандартные переменные Bootstrap
+$grid-breakpoints: $custom-breakpoints;
+
+// Переопределяем максимальные ширины контейнеров
+$container-max-widths: (
+  mobile: 100%,
+  mobile-lg: 100%,
+  tablet: 720px,
+  tablet-lg: 960px,
+  desktop: 1200px,
+  desktop-lg: 1320px,
+  hd: 1600px,
+  4k: 2000px
+);
+
+// Импорт Bootstrap (после переопределения переменных)
+@use "~bootstrap/scss/bootstrap" as *;
+
+// Дополнительные миксины для точного контроля
+@mixin media-exact($breakpoint) {
+  @if map-has-key($custom-breakpoints, $breakpoint) {
+    $width: map-get($custom-breakpoints, $breakpoint);
+    @media (min-width: $width) and (max-width: $width + 0.02px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint #{$breakpoint} не существует";
+  }
+}
+
+@mixin media-between($lower, $upper) {
+  $min: map-get($custom-breakpoints, $lower);
+  $max: map-get($custom-breakpoints, $upper);
+  
+  @media (min-width: $min) and (max-width: $max - 0.02px) {
+    @content;
+  }
+}

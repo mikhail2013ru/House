@@ -66,9 +66,17 @@ module.exports = {
         {
           test: /\.s[ac]ss$/i, // Регулярка для .scss и .sass
           use: [
-            // process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, // Инжектит стили в DOM (для быстрой перезагрузки), Извлекает в отдельный файл (для production)
-            MiniCssExtractPlugin.loader,
-            'css-loader',
+            // Выбор загрузчика стилей
+            process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, // Инжектит стили в DOM (для быстрой перезагрузки), Извлекает в отдельный файл (для production)
+            
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true, // Включаем source maps
+                importLoaders: 2 // Указываем количество предыдущих загрузчиков (postcss и sass)
+              }
+            },
+
             {
               loader: 'postcss-loader',
               options: {
@@ -76,19 +84,32 @@ module.exports = {
                   config: true, // Ищет postcss.config.js автоматически
                   plugins: [require('autoprefixer')],
                 },
+                sourceMap: true // Добавляем sourceMap для postcss
               },
             },
+
             {
               loader: 'sass-loader',   // Компилирует SASS/SCSS в CSS
               options: {
                 sassOptions: {
                   quietDeps: true, // Вот здесь добавляем параметр игнора warning bootstrap 5
-                  includePaths: [path.resolve(__dirname, 'src/styles')]
-                }
+                  includePaths: [
+                    path.resolve(__dirname, 'src/styles'),
+                    path.resolve(__dirname, 'node_modules')
+                  ],
+                  outputStyle: 'expanded',
+                  // Добавляем sourceMap в sassOptions
+                  sourceMap: process.env.NODE_ENV !== 'production'
+                },
+                additionalData: `
+                  @use "sass:map";
+                  @use "sass:math";
+                `,
+                // Переносим sourceMap на уровень options
+                sourceMap: process.env.NODE_ENV !== 'production'
               }
             }
           ],
-          include: path.resolve(__dirname, 'src/styles')
         },
       ],
     },
@@ -97,4 +118,9 @@ module.exports = {
         new CssMinimizerPlugin(), // Минифицирует CSS
       ],
     },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      },
+    }
 }
