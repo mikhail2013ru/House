@@ -1,14 +1,17 @@
 @use './base/mixins' as *;
-@use './base/variables' as *;  // Добавлена точка и слеш перед именем файла
-@use "bootstrap" with (
-  $container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1440px
-  )
-);
+@use './base/variables' as vars;  // Добавлена точка и слеш перед именем файла
+// @use "bootstrap/scss/variables" as *;
+// @use './base/custom-bootstrap' as *; 
+@use "~bootstrap/scss/bootstrap" as *;
+// @use "bootstrap" with (
+//   $container-max-widths: (
+//     sm: 540px,
+//     md: 720px,
+//     lg: 960px,
+//     xl: 1140px,
+//     xxl: 1440px
+//   )
+// );
 
 @use './components/header.scss';
 @use './components/pictures.scss';
@@ -32,7 +35,6 @@ a {
 
 body {
   @include flex-center;
-  font-family: $headings-font-family;
-  color: $primary-color;
+  font-family: vars.$headings-font-family;
   flex-direction: column;
 }
