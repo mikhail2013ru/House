@@ -1,5 +1,5 @@
 .catalog {
-    padding-bottom: 70px;
+    padding-bottom: 58px;
     &__row-gap {
         margin-bottom: 30px;
     }
@@ -50,9 +50,17 @@
         // padding-bottom: 20px;
     }
 
+    &__cart-image {
+        max-width: 310px;
+        max-height: auto;
+        width: 100%;
+    }
+
     &__art-author {
         color: #86928B;
         padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
     }    
 
     &__art-name {
@@ -101,6 +109,12 @@
 
         &__tabs-list {
             margin: 0;
+        }
+
+        &__cart-image {
+            max-width: 290px;
+            max-height: 422px;
+            width: 100%;
         }
     }
 }

@@ -24,3 +24,27 @@
         gap: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        &__image {
+            margin: 0;
+            padding-left: 27px;
+        }
+
+        &__block {
+            padding-left: 27px;
+            padding-top: 40px;
+        }
+
+        &__title {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            margin-bottom: 30px;
+        }
+    }
+}

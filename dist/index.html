@@ -10,12 +10,12 @@
         <div class="container" style="max-width: 1110px;">
             <div class="row align-items-center">
                 <div class="col">
-                    <div class="header__wrap d-flex justify-content-between align-items-center">
+                    <div class="header__wrap">
                         <a href="/" class="header__logo d-flex align-items-center text-decoration-none">
                             <img src="images/Star.png" alt="Star 1" loading="lazy">
                             <span class="header__logo-text">Ink. House</span>
                         </a>
-                        <nav class="header__nav d-flex justify-content-between align-items-center">
+                        <nav class="header__nav">
                             <ul class="header__list list-unstyled d-flex mb-0">
                                 <li class="header__list-item">
                                     <a href="/reproductions" class="header__list-link">Репродукции</a>
@@ -94,7 +94,7 @@
                     <div class="col-lg-4 col-md-6">
                         <article class="catalog__cart">
                             <figure class="catalog__cart-art">
-                                <img src="./images/1.jpg" alt="art" width="310" height="422">
+                                <img src="./images/1.jpg" alt="art" class="catalog__cart-image">
                             </figure>
                             <div class="catalog__art-author">Марсель Руссо</div>
                             <h3 class="catalog__art-name">Охота Амура</h3>
@@ -106,7 +106,7 @@
                     <div class="col-lg-4 col-md-6">
                         <article class="catalog__cart">
                             <figure class="catalog__cart-art">
-                                <img src="./images/2.jpg" alt="art" width="310" height="422">
+                                <img src="./images/2.jpg" alt="art" class="catalog__cart-image">
                             </figure>
                             <div class="catalog__art-author">Анри Селин</div>
                             <h3 class="catalog__art-name">Дама с собачкой</h3>
@@ -118,7 +118,7 @@
                     <div class="col-lg-4 col-md-6">
                         <article class="catalog__cart">
                             <figure class="catalog__cart-art">
-                                <img src="./images/3.jpg" alt="art" width="310" height="422">
+                                <img src="./images/3.jpg" alt="art" class="catalog__cart-image">
                             </figure>
                             <div class="catalog__art-author">Франсуа Дюпон</div>
                             <h3 class="catalog__art-name">Процедура</h3>
@@ -130,7 +130,7 @@
                     <div class="col-lg-4 col-md-6">
                         <article class="catalog__cart">
                             <figure class="catalog__cart-art">
-                                <img src="./images/4.jpg" alt="art" width="310" height="422">
+                                <img src="./images/4.jpg" alt="art" class="catalog__cart-image">
                             </figure>
                             <div class="catalog__art-author">Луи Детуш</div>
                             <h3 class="catalog__art-name">Роза</h3>
@@ -142,7 +142,7 @@
                     <div class="col-lg-4 col-md-6">
                         <article class="catalog__cart">
                             <figure class="catalog__cart-art">
-                                <img src="./images/5.jpg" alt="art" width="310" height="422">
+                                <img src="./images/5.jpg" alt="art" class="catalog__cart-image">
                             </figure>
                             <div class="catalog__art-author">Франсуа Дюпон</div>
                             <h3 class="catalog__art-name">Птичья трапеза</h3>
@@ -154,7 +154,7 @@
                     <div class="col-lg-4 col-md-6">
                         <article class="catalog__cart catalog__cart--mr-0 catalog__cart--mb-0">
                             <figure class="catalog__cart-art">
-                                <img src="./images/6.jpg" alt="art" width="310" height="422">
+                                <img src="./images/6.jpg" alt="art" class="catalog__cart-image">
                             </figure>
                             <div class="catalog__art-author">Пьер Моранж</div>
                             <h3 class="catalog__art-name">Пейзаж с рыбой</h3>
@@ -195,12 +195,12 @@
         <section class="about">
             <div class="container" style="max-width: 1110px;">
                 <div class="row align-items-center">
-                    <div class="col-md-5">
+                    <div class="col-lg-5 col-md-12">
                         <figure class="about__image">
                             <img src="./images/Group 210.png" alt="">
                         </figure>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-lg-7 col-md-12">
                         <div class="about__block">
                             <h3 class="about__title">Наша команда</h3>
                             <p class="about__description">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
@@ -224,7 +224,7 @@
     <footer class="footer">
         <div class="container" style="max-width: 1110px;">
             <div class="row d-flex">
-                <div class="col">
+                <div class="col-lg-4 col-md-12">
                     <div class="footer__home-block">
                         <a href="#" class="footer__home-link">
                             <img src="images/Star.png" alt="Star 1" loading="lazy">
@@ -236,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-5 col-md-8">
                     <div class="footer__information-block d-flex">
                         <ul class="footer__information-list list-unstyled">
                             <li class="footer__list-item">
@@ -278,8 +278,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer__social-block d-flex align-items-end flex-column">
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer__social-block">
                         <div class="footer__social-links">
                             <a href="#" class="footer__icons-link">
                                 <img src="./images/facebook.svg" alt="" aria-label="Facebook" width="24" height="24">
@@ -290,9 +290,9 @@
                             <a href="#" class="footer__icons-link">
                                 <img src="./images/youtube.svg" alt="" aria-label="youtube" width="24" height="24">
                             </a>
-                            <p class="footer__copyrights-text d-flex flex-column">
+                            <p class="footer__copyrights-text">
                               <span class="footer__copyrights">Ink. House &reg;</span>
-                              <span class="footer__copyrights">All rights reserved</span>                         
+                              <span class="footer__copyrights mb-0">All rights reserved</span>                         
                             </p>
                         </div>
                     </div>

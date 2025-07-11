@@ -43,6 +43,12 @@
         color: #2C2D35;
     }
 
+    &__social-block {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
     &__social-links {
         // margin-bottom: 10px;
     }
@@ -54,9 +60,60 @@
     }
 
     &__copyrights-text {
+        display: flex;
+        flex-direction: column;
         margin-top: 10px;
         font-size: 12px;
         font-weight: 500;
         color: #86928B;
     }
 }
+
+@media (max-width: 768px) {
+    .footer {
+        &__home-block {
+            padding-left: 27px;
+            padding-right: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 52px;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+        
+        &__home-link {
+            display: flex;
+            align-items: center;
+        }
+
+        &__art-workshop {
+            margin: 0;
+        }
+
+        &__contacts {
+            margin: 0;
+        }
+
+        &__information-block {
+            padding-left: 27px;
+        }
+
+        
+        &__social-block {
+            display: flex;
+            align-items: flex-end;
+            padding-right: 27px;
+            // flex-direction: row;
+        }
+
+        &__copyrights-text {
+           margin-bottom: 0;
+        }
+
+        &__copyrights {
+            margin-bottom: 6px;
+        }
+    }
+}
+
