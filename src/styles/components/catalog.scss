@@ -16,6 +16,11 @@
         }
     }
 
+    &__tabs-list {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     &__tab-link {
         font-size: 20px;
         font-weight: 500;
@@ -74,14 +79,14 @@
         color: #2C2D35;
         font-size: 18px;
         font-weight: 500;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     &__art-price {
         font-size: 24px;
         font-weight: 500;
         color: #598D66;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     &__button {
@@ -115,6 +120,67 @@
             max-width: 290px;
             max-height: 422px;
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .catalog {
+        &__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__tabs-list {
+            margin: 0;
+        }
+
+        &__cart-art {
+            margin-bottom: 15px;
+        }
+
+        &__cart-image {
+            max-width: 200px;
+            max-height: 250px;
+            width: 100%;
+        }
+
+        &__tabs-list {
+            justify-content: flex-start;
+            // margin-bottom: 20px;
+        }
+
+        &__tab-link {
+            font-size: 18px;
+        }
+
+        &__art-author {            
+            font-size: 16px;
+        }  
+        
+        &__art-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        &__art-description {
+            font-size: 16px;
+            line-height: 1.2;
+            // padding-bottom: 30px;
+            &--resize {
+                margin-bottom: 11px;
+            }
+        }
+
+        &__art-price {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__button {
+            height: 50px;
+            padding: 0;
         }
     }
 }

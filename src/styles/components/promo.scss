@@ -36,7 +36,7 @@
     }
 
     &__title-image {
-        padding-right: 20px;
+        margin-right: 20px;
     }
 
     &__title {
@@ -72,6 +72,7 @@
         padding: 21px 60px;
         font-size: 20px;
         font-weight: 500;
+        display: inline-flex;
     }
 }
 
@@ -104,5 +105,65 @@
         max-width: 450px;
         width: 100%;
       }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        &__bg {
+            // min-width: 1440px;
+            max-width: 576px;
+            max-height: 410px;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/pic_background_mobile.png');
+            background-size: cover; // или 1440px 574px если нужно точное соответствие
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            &::after {
+                background-color: rgba(0, 0, 0, 0); // Затемнение 30%
+                mix-blend-mode: multiply; // Или soft-light для другого эффекта
+            }
+        }
+
+        &__wrapper {
+            padding: 50px 0 50px 33px;
+        }
+
+        &__image {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        &__title-image {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            padding-bottom: 0;
+            font-size: 24px;
+        }
+
+        &__title-wrap {
+            max-width: 331px;
+        }
+
+        &__description-wrap {
+            max-width: 510px;
+            margin-bottom: 20px;
+            // width: 100%;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+
+        &__button {
+            max-width: 190px;
+            // max-height: 50px;
+            padding: 15px 35.5px;
+            line-height: 20px;
+        }
     }
 }
