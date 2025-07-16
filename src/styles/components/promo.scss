@@ -110,6 +110,7 @@
 
 @media (max-width: 576px) {
     .promo {
+        min-height: initial;
         &__bg {
             // min-width: 1440px;
             max-width: 576px;
@@ -128,7 +129,7 @@
         }
 
         &__wrapper {
-            padding: 50px 0 50px 33px;
+            padding: 50px 0 35px 33px;
         }
 
         &__image {
