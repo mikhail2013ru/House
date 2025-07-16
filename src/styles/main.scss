@@ -19,6 +19,7 @@
 @use './components/promo';
 @use './components/about.scss';
 @use './components/footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 // Кастомные стили
 .fixed-height {
@@ -34,7 +35,9 @@ a {
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; // Medium
   @include flex-center;
-  font-family: vars.$headings-font-family;
   flex-direction: column;
+  // font-family: vars.$headings-font-family;
 }
