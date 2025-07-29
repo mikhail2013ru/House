@@ -40,6 +40,10 @@ header {
   &__basket {
     margin-left: 60px;
   }
+
+  &__mobile-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -106,20 +110,7 @@ header {
       justify-content: center;
     }
 
-    &__nav {
-      background-color: #E1EDE6;
-      position: relative;
-      z-index: 500;
-    }
-
-    &__mobile-nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 16px 15px;
-      position: relative;
-      z-index: 1002;
-    }
-
+    
     &__mobile-menu {
       height: 130px;
       display: flex;
@@ -127,12 +118,37 @@ header {
       justify-content: center;
       max-width: 320px;
       width: 100%;
+      position: relative;
     }
-
-    &__menu-wrap {
+    
+    &__menu-mobile-wrap {
       display: flex;
       flex-direction: column;
-      // justify-content: space-between;
+      position: relative;
+    }
+    
+    &__mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 15px;
+      position: relative;
+      z-index: 1002;
+    }
+    
+    &__mobile-menu-nav {
+      // background-color: #E1EDE6;
+      background-color: rebeccapurple;
+      // z-index: 500;
+      // position: fixed;
+      position: relative;
+      top: -62px;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      z-index: 1001;
+      padding: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
     }
 
     &__basket {
@@ -144,6 +160,10 @@ header {
       flex-direction: column;
     }
 
+    &__mobile-menu-nav.active {
+      left: 0;
+    }
+
     &__overlay {
       display: none;
       position: fixed;
@@ -152,20 +172,33 @@ header {
       width: 100%;
       height: 100%;
       background: rgba(0,0,0,0.5);
-      z-index: 999;
+      z-index: 1000;
     }
   
-    &__overlay {
-      &--active {
-        display: block;
-      }
+    &__overlay.active {
+      display: block;
+      // &--active {
+      // }
+    }
+
+    &__mobile-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__mobile-menu {
+      display: block;
     }
   }
 }
 
 @media (min-width: 576px) {
   .header {
-    &__menu-wrap {
+    &__menu-mobile-wrap {
       display: none;
     }    
   }

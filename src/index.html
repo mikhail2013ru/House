@@ -13,9 +13,14 @@
                 <div class="col">
                     <div class="header__wrap">
                         <a href="/" class="header__logo d-flex align-items-center text-decoration-none">
-                            <img src="images/Star.png" alt="Star 1" loading="lazy">
+                            <img src="images/Star.png" alt="Ink. House" loading="lazy">
                             <span class="header__logo-text">Ink. House</span>
                         </a>
+
+                        <!-- <button class="header__burger d-lg-none" aria-label="Открыть меню">
+                            <img src="./images/List.svg" alt="" width="24" height="24">
+                        </button> -->
+
                         <nav class="header__nav">
                             <ul class="header__list list-unstyled d-flex mb-0">
                                 <li class="header__list-item">
@@ -47,11 +52,11 @@
         </div>
 
         <div class="header__mobile-menu">
-            <div class="header__menu-wrap">
-                <a href="/" class="header__logo">
-                    <img src="images/Star.png" alt="Star 1" loading="lazy">
-                    <span class="header__logo-text">Ink. House</span>
-                </a>
+            <a href="/" class="header__logo">
+                <img src="images/Star.png" alt="Star 1" loading="lazy">
+                <span class="header__logo-text">Ink. House</span>
+            </a>
+            <div class="header__menu-mobile-wrap">
                 <div class="header__mobile-nav">
                     <div class="header__burger">
                         <img src="./images/List.svg" alt="burger">
@@ -69,11 +74,11 @@
                         </a>
                     </div>
                 </div>
-                <nav class="header__nav">
+                <nav class="header__mobile-menu-nav">
+                    <button class="header__mobile-close">
+                        <img src="./images/close.svg" alt="Закрыть">
+                    </button>
                     <ul class="header__list list-unstyled d-flex mb-0">
-                        <li class="header__list-item">
-                            <img src="./images/close.svg" alt="close">
-                        </li>
                         <li class="header__list-item">
                             <a href="/reproductions" class="header__list-link">Репродукции</a>
                         </li>
@@ -85,7 +90,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__overlay header__overlay--active"></div>
+                <div class="header__overlay"></div>
             </div>
         </div>
     </header>
