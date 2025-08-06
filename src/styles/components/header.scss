@@ -206,6 +206,14 @@
   }
 }
 
+@media (max-width: 430px) {
+  .header {
+    &__mobile-nav {
+      padding-left: 23px;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .header {
     &__wrap {

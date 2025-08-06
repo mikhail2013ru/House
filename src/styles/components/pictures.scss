@@ -83,7 +83,8 @@
 
         &__card {
             width: 100%;
-            max-width: 285px;
+            // padding: 0 15px 0 15px;
+            // max-width: 285px;
         }
 
         &__button {
@@ -92,6 +93,22 @@
             max-height: 50px;
             padding: 11px 50px;
             // margin-top: 11px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .pictures {
+        padding-top: 60px;
+        &__card {
+            width: 100%;
+            padding: 0 3px 0 3px;
+            // max-width: 285px;
+        }
+
+        &__describe {
+            font-size: 14px;
+            margin-bottom: 40px;
         }
     }
 }
