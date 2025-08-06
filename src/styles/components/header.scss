@@ -209,7 +209,7 @@
 @media (max-width: 430px) {
   .header {
     &__mobile-nav {
-      padding-left: 23px;
+      padding-left: 16px;
     }
   }
 }
@@ -246,6 +246,21 @@
     &__list-link {
       font-size: 18px;
     }
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    
+    & > .col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
