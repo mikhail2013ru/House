@@ -103,26 +103,7 @@
     }
 }
 
-@media (max-width: 768px) {
-    .catalog {
-        padding-left: 27px;
-        padding-right: 27px;
-        &__title {
-            font-size: 30px;
-            margin: 0;
-        }
 
-        &__tabs-list {
-            margin: 0;
-        }
-
-        &__cart-image {
-            max-width: 290px;
-            max-height: 422px;
-            width: 100%;
-        }
-    }
-}
 
 @media (max-width: 576px) {
     .catalog {
@@ -181,6 +162,68 @@
         &__button {
             height: 50px;
             padding: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        padding-left: 27px;
+        padding-right: 27px;
+        &__title {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        &__tabs-list {
+            margin: 0;
+        }
+
+        &__cart-image {
+            max-width: 290px;
+            max-height: 422px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .catalog {
+        &__tabs-container {
+            // overflow-x: auto;
+            -webkit-overflow-scrolling: auto; // Явное отключение устаревшего свойства
+            scrollbar-width: none; // Firefox
+            -ms-overflow-style: none; // IE
+            overscroll-behavior-x: contain; // Предотвращает скролл страницы
+            width: 100%;            
+            &::-webkit-scrollbar {
+                display: none; // Chrome/Safari
+            }
+            // min-width: 100vh;
+        }
+
+        &__tabs-list {
+            overflow-x: auto;
+            display: inline-flex; // Ключевое свойство!
+            flex-wrap: nowrap;
+            padding-bottom: 15px; // Пространство для скролла
+            margin-bottom: -15px; // Компенсация padding
+            white-space: nowrap;
+            width: auto;
+        }
+
+        &__tab-item {
+            flex: 0 0 auto; // Важно!
+            margin-right: 12px;            
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__tab-link {
+            display: block;
+            padding: 8px 16px;
+            white-space: nowrap;
         }
     }
 }
