@@ -67,8 +67,8 @@ module.exports = {
           test: /\.s[ac]ss$/i, // Регулярка для .scss и .sass
           use: [
             // Выбор загрузчика стилей
-            process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, // Инжектит стили в DOM (для быстрой перезагрузки), Извлекает в отдельный файл (для production)
-            
+            // process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader, // Инжектит стили в DOM (для быстрой перезагрузки), Извлекает в отдельный файл (для production)
+            MiniCssExtractPlugin.loader,
             {
               loader: 'css-loader',
               options: {
@@ -99,14 +99,16 @@ module.exports = {
                   ],
                   outputStyle: 'expanded',
                   // Добавляем sourceMap в sassOptions
-                  sourceMap: process.env.NODE_ENV !== 'production'
+                  // sourceMap: process.env.NODE_ENV !== 'production'
+                  sourceMap: true,
                 },
                 additionalData: `
                   @use "sass:map";
                   @use "sass:math";
                 `,
                 // Переносим sourceMap на уровень options
-                sourceMap: process.env.NODE_ENV !== 'production'
+                // sourceMap: process.env.NODE_ENV !== 'production'
+                sourceMap: true,
               }
             }
           ],
@@ -115,7 +117,7 @@ module.exports = {
     },
     optimization: {
       minimizer: [
-        new CssMinimizerPlugin(), // Минифицирует CSS
+        new CssMinimizerPlugin(), // Минифицирует CSS, но только в production
       ],
     },
     resolve: {
