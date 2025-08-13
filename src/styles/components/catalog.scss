@@ -101,26 +101,19 @@
         background-color: #E1EDE6;
         border: 1px solid #598D66;
     }
-
-    // &__tabs-container {
-    //     width: 100%;
-    //     position: relative; // Добавьте это
-    // }
 }
 
-// .catalog__tabs-container {
-//     border: 2px solid red !important;
-//     overflow-x: scroll !important;
-// }
-// .catalog__tabs-list {
-//     border: 2px solid blue !important;
-//     width: 200% !important;
-// }
-
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .catalog {
         padding-left: 27px;
         padding-right: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        // padding-left: 27px;
+        // padding-right: 27px;
         &__title {
             font-size: 30px;
             margin: 0;
@@ -238,29 +231,38 @@
     }
 }
 
-@media (max-width: 430px) {
+// @media (max-width: 480px) {
+//     .catalog {
+//         padding: 0;
+//         border: 2px solid red !important;
+//     }
+// }
+
+@media (max-width: 540px) {
     .catalog {
-        border: 2px solid red !important;
         padding: 0;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .catalog {
         // padding: 0;
+        // border: 2px solid red !important;
         &__title {
             margin-bottom: 20px;
         }
 
         &__tabs-container {
             overflow-x: auto;
-            // width: 100vw;
-            max-width: 295px;
-            // margin: 0 auto;
-            // padding-left: 15px;
-            // padding: 0 10px;
+            overflow-y: hidden;
+            max-width: 100vw;
+            width: 100%;
+            margin: 0 auto;
+            // padding: 0 15px;
             box-sizing: border-box;
-            scroll-snap-type: x mandatory;
+            // width: 100vw;
+            // padding-left: 15px;
+            // scroll-snap-type: x mandatory;
             &::-webkit-scrollbar {
                 display: none;
             }
@@ -343,6 +345,13 @@
     }
 }
 
+@media (max-width: 320px) {
+    .catalog {
+        &__tabs-list {
+            max-width: 300px;
+        }
+    }
+}
 
 
 

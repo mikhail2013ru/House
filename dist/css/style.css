@@ -12298,8 +12298,7 @@ textarea.form-control-lg {
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: 16px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding: 0 !important;
   }
   .header__logo {
     padding: 16px 0;
@@ -12309,6 +12308,7 @@ textarea.form-control-lg {
     border-top: 1px solid #C3D1C6;
     height: 56px;
     align-items: flex-end;
+    width: calc(100% - 66px);
   }
   .header__list-item {
     margin-left: 0;
@@ -12352,7 +12352,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   max-width: 540px;
-  max-height: 331px;
 }
 .pictures__title {
   color: #2C2D35;
@@ -12370,6 +12369,9 @@ textarea.form-control-lg {
   margin-bottom: 40px;
 }
 .pictures__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: #598D66;
   font-size: 20px;
   font-weight: 500;
@@ -12377,10 +12379,16 @@ textarea.form-control-lg {
   padding: 18.5px 51.5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .pictures {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
   }
+  .pictures__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 768px) {
   .pictures__image {
     max-width: 330px;
     max-height: 380px;
@@ -12426,9 +12434,6 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 540px) {
-  .pictures {
-    padding-bottom: 70px;
-  }
   .pictures__image {
     max-width: 330px;
     max-height: 380px;
@@ -12542,11 +12547,13 @@ textarea.form-control-lg {
   border: 1px solid #598D66;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .catalog {
     padding-left: 27px;
     padding-right: 27px;
   }
+}
+@media (max-width: 768px) {
   .catalog__title {
     font-size: 30px;
     margin: 0;
@@ -12606,21 +12613,22 @@ textarea.form-control-lg {
     padding: 0;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 540px) {
   .catalog {
-    border: 2px solid red !important;
     padding: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .catalog__title {
     margin-bottom: 20px;
   }
   .catalog__tabs-container {
     overflow-x: auto;
-    max-width: 295px;
+    overflow-y: hidden;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
     box-sizing: border-box;
-    scroll-snap-type: x mandatory;
   }
   .catalog__tabs-container::-webkit-scrollbar {
     display: none;
@@ -12659,6 +12667,11 @@ textarea.form-control-lg {
   .catalog__cart-image {
     max-width: 250px;
     max-height: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .catalog__tabs-list {
+    max-width: 300px;
   }
 }
 .promo {
