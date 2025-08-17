@@ -12752,9 +12752,14 @@ textarea.form-control-lg {
   display: inline-flex;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1320px) {
   .promo {
-    min-width: 1440px;
+    min-width: 1320px;
+  }
+}
+@media (max-width: 960px) {
+  .promo__wrapper {
+    padding-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -12826,6 +12831,16 @@ textarea.form-control-lg {
     line-height: 20px;
   }
 }
+@media (max-width: 320px) {
+  .promo__bg {
+    max-height: 553px;
+    background-image: url(../images/Rectangle-mobile.jpg);
+    z-index: 0;
+  }
+  .promo__wrapper {
+    padding: 50px 15px 35px 15px;
+  }
+}
 .about {
   padding: 70px 0 70px;
   color: #2C2D35;
@@ -12850,8 +12865,19 @@ textarea.form-control-lg {
   gap: 30px;
 }
 
+@media (max-width: 960px) {
+  .about {
+    padding: 70px 27px 70px;
+  }
+  .about__block {
+    padding-left: 0;
+  }
+  .about__description {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 768px) {
-  .about__image {
+  .about__image-wrap {
     margin: 0;
     padding-left: 27px;
   }
@@ -12879,6 +12905,17 @@ textarea.form-control-lg {
   .about__description {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .about__image-wrap {
+    padding-left: 3px;
+  }
+  .about__image {
+    max-width: 234px;
+  }
+  .about__block {
+    padding-left: 3px;
   }
 }
 .footer {
@@ -12937,6 +12974,40 @@ textarea.form-control-lg {
   color: #86928B;
 }
 
+@media (max-width: 960px) {
+  .footer {
+    padding: 23px 27px 23px;
+  }
+  .footer__home-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__home-link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .footer__link-img {
+    height: 35px;
+    width: 35px;
+  }
+  .footer__logo-text {
+    color: #598D66;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 10px;
+    line-height: 35px;
+  }
+  .footer__contacts {
+    margin-top: 0;
+  }
+  .footer__social-block {
+    padding-right: 29px;
+  }
+}
 @media (max-width: 768px) {
   .footer__home-block {
     padding-left: 27px;

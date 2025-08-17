@@ -65,6 +65,43 @@
     }
 }
 
+@media (max-width: 960px) {
+    .footer {
+        padding: 23px 27px 23px;
+        &__home-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__home-link {
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        &__link-img {
+            height: 35px;
+            width: 35px;
+        }
+
+        &__logo-text {
+            color: #598D66;    
+            font-weight: 700;
+            font-size: 20px;
+            // line-height: 100%;
+            padding-left: 10px;    
+            line-height: 35px;        
+        }
+
+        &__contacts {
+            margin-top: 0;
+        }
+
+        &__social-block {
+            padding-right: 29px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         &__home-block {
