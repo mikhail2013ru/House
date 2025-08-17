@@ -12552,6 +12552,14 @@ textarea.form-control-lg {
     padding-left: 27px;
     padding-right: 27px;
   }
+  .catalog__cart-image {
+    max-width: 100%;
+    max-height: 422px;
+  }
+  .catalog__cart {
+    margin-right: 0;
+    max-width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .catalog__title {
