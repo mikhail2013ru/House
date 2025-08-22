@@ -12990,11 +12990,12 @@ textarea.form-control-lg {
   color: #86928B;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1199px) {
   .footer {
     padding: 23px 27px 23px;
   }
   .footer__home-block {
+    margin-bottom: 47px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -13010,12 +13011,34 @@ textarea.form-control-lg {
     height: 35px;
     width: 35px;
   }
+  .footer__art-workshop {
+    margin-bottom: 0;
+  }
+  .footer__row-wrap {
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: end;
+  }
+  .footer__contacts-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
   .footer__contacts {
     margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .footer__social-block-wrap {
+    max-width: 170px;
+    width: 100%;
   }
   .footer__social-block {
     flex-direction: row;
-    justify-content: center;
   }
 }
 @media (max-width: 768px) {
