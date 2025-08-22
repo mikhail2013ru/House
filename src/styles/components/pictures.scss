@@ -40,6 +40,12 @@
     }
 }
 
+@media (max-width: 1140px) {
+    .pictures .container__pictures--lg {
+        max-width: 1140px;
+    }
+}
+
 @media (max-width: 960px) {
     .pictures {
         margin-bottom: 70px;

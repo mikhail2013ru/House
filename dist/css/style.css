@@ -12379,6 +12379,11 @@ textarea.form-control-lg {
   padding: 18.5px 51.5px;
 }
 
+@media (max-width: 1140px) {
+  .pictures .container__pictures--lg {
+    max-width: 1140px;
+  }
+}
 @media (max-width: 960px) {
   .pictures {
     margin-bottom: 70px;
