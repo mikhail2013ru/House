@@ -160,9 +160,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-height: 52px;
-            height: 100%;
-            margin-bottom: 30px;
+            // max-height: 52px;
+            // height: 100%;
+            margin-bottom: 47px;
         }
         
         &__home-link {
@@ -172,14 +172,29 @@
 
         &__art-workshop {
             margin: 0;
+            line-height: 1;
         }
 
         &__contacts {
-            margin: 0;
+            line-height: 1;
+        }
+
+        &__phone-link {
+            margin-bottom: 8px;
+            display: flex;
+            line-height: 1;
+        }
+
+        &__icons-wrap {
+            margin-bottom: 10px;
         }
 
         &__information-block {
             // padding-left: 27px;
+        }
+
+        &__information-list {
+            line-height: 1.5;
         }
 
         
@@ -195,6 +210,7 @@
 
         &__copyrights {
             margin-bottom: 6px;
+            line-height: 1.2;
         }
     }
 }

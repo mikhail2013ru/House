@@ -13048,9 +13048,7 @@ textarea.form-control-lg {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 52px;
-    height: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 47px;
   }
   .footer__home-link {
     display: -webkit-box;
@@ -13060,9 +13058,23 @@ textarea.form-control-lg {
   }
   .footer__art-workshop {
     margin: 0;
+    line-height: 1;
   }
   .footer__contacts {
-    margin: 0;
+    line-height: 1;
+  }
+  .footer__phone-link {
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1;
+  }
+  .footer__icons-wrap {
+    margin-bottom: 10px;
+  }
+  .footer__information-list {
+    line-height: 1.5;
   }
   .footer__social-block {
     display: -webkit-box;
@@ -13076,6 +13088,7 @@ textarea.form-control-lg {
   }
   .footer__copyrights {
     margin-bottom: 6px;
+    line-height: 1.2;
   }
 }
 @media (max-width: 576px) {
