@@ -148,16 +148,37 @@
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
     .footer {
         &__contacts-wrap {
             display: flex;
             flex-direction: column;
             // justify-content: end;
             // align-items: end;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
+            max-width: 170px;
+            width: 100%;
         }
+
+        &__block-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__home-block {
+            margin-bottom: 30px;
+            // flex-direction: column;
+        }
+
+        // &__information-list {
+        //     line-height: 1.5;
+        //     margin: auto;
+        //     margin-left: 0;
+        //     &:not(:last-child) {
+        //         // margin-right: 0 !important;
+        //     }
+        // }
 
         // &__social-block-wrap {
         //     max-width: 170px;
@@ -172,11 +193,11 @@
             // padding-left: 27px;
             // padding-right: 27px;
             display: flex;
-            align-items: center;
+            // align-items: center;
             justify-content: space-between;
             // max-height: 52px;
             // height: 100%;
-            margin-bottom: 47px;
+            // margin-bottom: 30px;
         }
         
         &__home-link {
@@ -231,12 +252,39 @@
 
 @media (max-width: 576px) {
     .footer {
+        padding: 23px 9px;
+        &__information-list {
+            // margin-right: auto;
+        }
+
+        &__information-list {
+            &:not(:last-child) {
+                margin-right: auto;
+            }
+        }
+
+        &__block-wrap {
+            flex-direction: column;
+        }
+
+        &__contacts-wrap {
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        &__social-block-wrap {
+            max-width: 100%;
+            width: 100%;
+        }
+
         &__social-block {
             display: flex;
             align-items: center;
             padding-right: 0;
             border-top: 1px solid #C3D1C6;
             padding-top: 16px;
+            justify-content: center;
         }
 
         &__social-links {
