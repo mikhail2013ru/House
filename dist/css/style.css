@@ -12698,7 +12698,7 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/Rectangle.png);
+  background-image: url(../images/promo-background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12796,7 +12796,7 @@ textarea.form-control-lg {
     max-height: 410px;
     width: 100%;
     height: 100%;
-    background-image: url(../images/pic_background_mobile.png);
+    background-image: url(../images/promo-background-576px.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12839,7 +12839,7 @@ textarea.form-control-lg {
 @media (max-width: 320px) {
   .promo__bg {
     max-height: 553px;
-    background-image: url(../images/Rectangle-mobile.jpg);
+    background-image: url(../images/promo-background-320px.jpg);
     z-index: 0;
   }
   .promo__wrapper {
