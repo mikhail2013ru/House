@@ -1,16 +1,15 @@
 .promo {
     color: #F4F6F5;
-    min-height: 574px; // Фиксированная высота как в оригинале
-    overflow: hidden; // Важно для корректного отображения фона    
+    min-height: 574px; 
+    overflow: hidden;
     &__bg {
-        // min-width: 1440px;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background-image: url('../images/Rectangle.png');
-        background-size: cover; // или 1440px 574px если нужно точное соответствие
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         z-index: 0;
@@ -21,8 +20,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.3); // Затемнение 30%
-            mix-blend-mode: multiply; // Или soft-light для другого эффекта
+            background-color: rgba(0, 0, 0, 0.3);
+            mix-blend-mode: multiply;
         }
     }
     &__wrapper {
@@ -51,8 +50,6 @@
         margin-bottom: 60px;
         font-size: 18px;
         font-weight: 500;
-        // max-width: 540px;
-        // width: 100%;
     }
 
     &__description {
@@ -79,7 +76,6 @@
 @media (min-width: 1320px) {
     .promo {
       min-width: 1320px;
-    //   max-width: 100%;
     }
 }
 
@@ -93,7 +89,6 @@
 
 @media (max-width: 768px) {
     .promo {
-    //   min-width: 766px;
     max-width: 100%;
       &__wrapper {
         padding: 70px 0 70px 39px;
@@ -120,19 +115,18 @@
     .promo {
         min-height: initial;
         &__bg {
-            // min-width: 1440px;
             max-width: 576px;
             max-height: 410px;
             width: 100%;
             height: 100%;
             background-image: url('../images/pic_background_mobile.png');
-            background-size: cover; // или 1440px 574px если нужно точное соответствие
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             z-index: 0;
             &::after {
-                background-color: rgba(0, 0, 0, 0); // Затемнение 30%
-                mix-blend-mode: multiply; // Или soft-light для другого эффекта
+                background-color: rgba(0, 0, 0, 0);
+                mix-blend-mode: multiply;
             }
         }
 
@@ -161,7 +155,6 @@
         &__description-wrap {
             max-width: 510px;
             margin-bottom: 20px;
-            // width: 100%;
         }
 
         &__description {
@@ -170,7 +163,6 @@
 
         &__button {
             max-width: 190px;
-            // max-height: 50px;
             padding: 15px 35.5px;
             line-height: 20px;
         }
@@ -183,13 +175,6 @@
             max-height: 553px;
             background-image: url('../images/Rectangle-mobile.jpg');
             z-index: 0;
-            // min-width: 1440px;
-            // max-width: 576px;
-            // width: 100%;
-            // height: 100%;
-            // background-size: cover; // или 1440px 574px если нужно точное соответствие
-            // background-position: center;
-            // background-repeat: no-repeat;
         } 
         
         &__wrapper {

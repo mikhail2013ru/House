@@ -51,10 +51,6 @@
         }
     }
 
-    &__cart-art {
-        // padding-bottom: 20px;
-    }
-
     &__cart-image {
         max-width: 310px;
         max-height: auto;
@@ -94,7 +90,6 @@
         font-size: 20px;
         font-weight: 500;
         max-width: 310px;
-        // max-height: 65px;
         width: 100%;
         height: auto;
         padding: 21px 0 21px 0;
@@ -121,8 +116,6 @@
 
 @media (max-width: 768px) {
     .catalog {
-        // padding-left: 27px;
-        // padding-right: 27px;
         &__title {
             font-size: 30px;
             margin: 0;
@@ -137,45 +130,6 @@
             max-height: 422px;
             width: 100%;
         }
-
-
-        // &__tabs-container {
-        //     overflow-x: auto;
-        //     // -webkit-overflow-scrolling: auto; // Явное отключение устаревшего свойства
-        //     scrollbar-width: none; // Firefox
-        //     -ms-overflow-style: none; // IE
-        //     overscroll-behavior-x: contain; // Предотвращает скролл страницы
-        //     width: 100%;            
-        //     &::-webkit-scrollbar {
-        //         display: none; // Chrome/Safari
-        //     }
-        //     // min-width: 100vh;
-        // }
-
-        // &__tabs-list {
-        //     overflow-x: auto;
-        //     display: inline-flex; // Ключевое свойство!
-        //     flex-wrap: nowrap;
-        //     padding-bottom: 15px; // Пространство для скролла
-        //     margin-bottom: -15px; // Компенсация padding
-        //     white-space: nowrap;
-        //     width: max-content;
-        //     min-width: 100%;
-        // }
-
-        // &__tab-item {
-        //     flex: 0 0 auto; // Важно!
-        //     margin-right: 12px;            
-        //     &:last-child {
-        //         margin-right: 0;
-        //     }
-        // }
-
-        // &__tab-link {
-        //     display: block;
-        //     padding: 8px 16px;
-        //     white-space: nowrap;
-        // }
     }
 }
 
@@ -202,7 +156,6 @@
 
         &__tabs-list {
             justify-content: flex-start;
-            // margin-bottom: 20px;
         }
 
         &__tab-link {
@@ -222,7 +175,6 @@
         &__art-description {
             font-size: 16px;
             line-height: 1.2;
-            // padding-bottom: 30px;
             &--resize {
                 margin-bottom: 11px;
             }
@@ -240,13 +192,6 @@
     }
 }
 
-// @media (max-width: 480px) {
-//     .catalog {
-//         padding: 0;
-//         border: 2px solid red !important;
-//     }
-// }
-
 @media (max-width: 540px) {
     .catalog {
         padding: 0;
@@ -255,8 +200,6 @@
 
 @media (max-width: 480px) {
     .catalog {
-        // padding: 0;
-        // border: 2px solid red !important;
         &__title {
             margin-bottom: 20px;
         }
@@ -267,54 +210,25 @@
             max-width: 100vw;
             width: 100%;
             margin: 0 auto;
-            // padding: 0 15px;
             box-sizing: border-box;
-            // width: 100vw;
-            // padding-left: 15px;
-            // scroll-snap-type: x mandatory;
             &::-webkit-scrollbar {
                 display: none;
             }
-            // -webkit-overflow-scrolling: auto; // Явное отключение устаревшего свойства
-            // scrollbar-width: none; // Firefox
-            // -ms-overflow-style: none; // IE
-            // overscroll-behavior-x: contain; // Предотвращает скролл страницы
-            // // width: 100%;    
-            // // max-width: 320px;        
-            // max-width: 100vw; // Ширина ровно по экрану
-            // margin-left: calc(50% - 160px); // Точное центрирование
-            // &::-webkit-scrollbar {
-            //     display: none; // Chrome/Safari
-            // }
-            // min-width: 100vh;
         }
 
         &__tabs-list {
-            display: flex; // Меняем на flex вместо inline-flex
+            display: flex;
             flex-wrap: nowrap;
-            // width: max-content;
             padding-bottom: 15px;
             padding-left: 10px;
-            margin: 0 -10px; // Компенсируем padding контейнера
-            // overflow-x: auto;
-            // display: inline-flex; // Ключевое свойство!
-            // flex-wrap: nowrap;
-            // padding-bottom: 15px; // Пространство для скролла
-            // margin-bottom: -15px; // Компенсация padding
-            // white-space: nowrap;
-            // width: auto;
+            margin: 0 -10px;
         }
 
         &__tab-item {
-            flex: 0 0 35%; // Важно!
+            flex: 0 0 35%;
             scroll-snap-align: start;
-            // margin-right: 20px;    
-
             &:last-child {
                 margin-right: 0;
-                // margin-right: 20px; // Добавляем отступ в конце
-                // margin-right: 0;
-                // padding-right: 15px; // Добавляем отступ для последнего элемента
             }
 
             &:not(:last-child) {
@@ -322,23 +236,12 @@
             }
         }
 
-        // &__tab-item {
-        //     &:not(:last-child) {
-        //         margin-right: 32px;
-        //     }
-        // }
-
         &__tab-link {
             display: block;
             width: 100%;
             padding: 8px 12px;
             box-sizing: border-box;
             text-align: center;
-            // min-width: 100px; // Фиксированная минимальная ширина
-            // box-sizing: border-box;
-            // display: block;
-            // padding: 8px 16px;
-            // white-space: nowrap;
         }
 
         &__cart {
