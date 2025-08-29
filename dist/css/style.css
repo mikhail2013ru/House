@@ -12191,6 +12191,7 @@ textarea.form-control-lg {
   padding: 16px 0 126px 15px;
   transition: all 0.3s ease;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
 }
 .header__mobile-menu-nav.active {
   left: 0;
