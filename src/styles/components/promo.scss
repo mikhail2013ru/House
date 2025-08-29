@@ -164,7 +164,7 @@
         &__button {
             max-width: 190px;
             padding: 15px 35.5px;
-            line-height: 20px;
+            line-height: 20px;            
         }
     }
 }
@@ -179,6 +179,15 @@
         
         &__wrapper {
             padding: 50px 15px 35px 15px;
+        }
+
+        &__button {
+            font-size: 18px;           
+            margin-bottom: 20px; 
+        }
+
+        &__description {
+            line-height: 1.4;
         }
     }
 }
